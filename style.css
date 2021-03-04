@@ -916,15 +916,17 @@ textarea{
 
 /*Bottom-bar*/
 .bottom-bar{
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .bottom-bar .container{
+    height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .social-bottom{
-    margin-left: 25%;
+    margin: 20px 0;
 }
 
 .social-bottom a i{
