@@ -1,0 +1,987 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@1,500&display=swap');
+
+:root{
+    --font: 'Lobster', cursive;
+    --yellow: #ffd633;
+    --gray: #d9d9d9;
+    --dark-gray: #8c8c8c;
+    --white: #fff;
+    --black: #000;
+    --font-ital: 'Newsreader', serif;
+    }
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    background: var(--yellow);
+    padding: 20px 40px;
+    border: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.btn:hover{
+    background: var(--white);
+    color: var(--black);
+    transition: .5s ease;
+}
+
+
+/*Header i Navigacija*/
+
+.header{
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .3)),url(img/Header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+ .logo a{
+    font-family: var(--font);
+    color: var(--yellow);
+    font-size: 2.5rem;
+    font-style: italic;
+}
+.logo a:hover{
+    color: var(--white);
+    transition: .5s ease;
+}
+.hamburger-menu{
+    display: none;
+}
+nav ul .nav-item{
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+nav ul .nav-item .nav-link{
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+nav ul .nav-item .nav-link:hover{
+    color: var(--yellow);
+    transition: .5s ease;
+}
+
+.content{
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content h1{
+    color: var(--white);
+    font-size: 3.2rem;
+    font-family: var(--font-ital);
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.content h2{
+    font-size: 5rem;
+    color: var(--white);
+    text-transform: uppercase;
+     margin-bottom: 30px;
+}
+
+/*Services*/
+
+.services{
+    padding: 80px;
+     text-align: center;
+}
+
+.services h3{
+   font-size: 4rem;
+   font-weight: 800;
+}
+.services p{
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    font-style: italic;
+}
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    
+}
+.service .service-one{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 22%;
+}
+.service-one a i{
+    font-size: 2.5rem;
+    border: 4px solid var(--yellow);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    line-height: 80px;
+    color: var(--yellow);
+    
+}
+.service-one h4{
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+
+/*Portfolio*/
+
+
+.title{
+    background: var(--gray);
+    text-align: center;
+    padding: 80px;
+}
+.title h3{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 40px;
+}
+.title p{
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+}
+.title .container{
+    margin-top: 50px;
+}
+
+.title .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+.row .port-one{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%;
+    padding: 40px 0;
+}
+.port-one .slika{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.slika .port-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .8);
+    transition: .5s ease;
+    opacity: 0;
+
+}
+.slika .port-text:hover{
+    opacity: 1;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.slika .port-text h4{
+     color: var(--yellow);
+     font-size: 1.2rem;
+    text-transform: uppercase;
+    border: 2px solid var(--yellow);
+    padding: 2px 4px;
+    
+}
+
+.port-one  img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.port-one .text{
+    background: var(--white);
+    padding: 40px 0;
+}
+
+.port-one .text h4{
+    font-size: 1.4rem;
+}
+
+
+/*About*/
+
+.about{
+    padding: 80px;
+    text-align: center;
+}
+.about h3{
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.about p {
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+}
+.about .container{
+    margin-top: 80px;
+}
+.about .row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -20px
+}
+.one{
+    position: relative;
+    height: 200px;
+    width: 350px;
+    text-align: right;
+    position: relative;
+    margin-right: 45%;
+}
+.texteria{
+    display: none;
+}
+.one h4{
+    font-size: 1.2rem;
+    margin-bottom: 20px
+}
+.two{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+}
+.two .hgroup{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+}
+.two .hgroup:hover{
+    opacity: 1;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.hgroup p{
+    font-size: 1.3rem;
+    color: var(--white);
+    
+}
+
+.two img{
+    width: 180px;
+    height: 180px;
+    line-height: 100px;
+    border: 5px solid var(--gray);
+    border-radius: 50%;
+    
+}
+.row .one-2{
+    height: 200px;
+    width: 350px;
+    text-align: left;
+    position: relative;
+    margin-left: 45%;
+}
+
+.one-2 h4{
+    font-size: 1.2rem;
+    margin-bottom: 20px
+}
+.linija{
+    width: 4px;
+    height: 90px;
+    background: var(--gray);
+    margin: auto;
+}
+.row-2{
+    background: var(--yellow);
+    width: 180px;
+    height: 180px;
+    /*line-height: 180px;*/
+    border: 3px solid var(--gray);
+    border-radius: 50%;
+    margin: auto;
+}
+.row-2 h4{
+   font-size: 1.4rem;
+    color: var(--white);
+    padding: 30px;
+}
+
+
+/*Team*/
+
+.team{
+    text-align: center;
+    background: var(--gray);
+    padding: 80px
+}
+.team h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.team p{
+    font-size: 1.1rem;
+}
+.team .container{
+    margin-top: 60px;
+    height: 100%;
+}
+.team .container p{
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+}
+.container .row-22{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 60px
+}
+.people img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px
+}
+.people h4{
+    font-size: 1.4rem;
+}
+.people p{
+    color: var(--dark-gray);
+}
+.people .social{
+    margin-top: 20px
+}
+.social a i{
+    font-size: 1.4rem;
+    border: 2px solid var(--black);
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: var(--black);
+    margin-right: 10px;
+}
+.social a i:hover{
+    background: var(--yellow);
+    color: var(--white);
+    transition: .5s ease;
+}
+
+
+
+/*Contact*/
+
+.contact{
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0,.8)),url(img/world.jpg);
+    background-position: center;
+    background-size: cover;
+    /*height: 100vh;*/
+    padding: 80px
+}
+
+.contact hgroup{
+    text-align: center;
+    color: var(--white);
+}
+hgroup h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+hgroup p{
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+.contact .container{
+    height: 100%;
+    text-align: center;
+ 
+    
+}
+
+
+.inputi{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.input-1{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 35%;
+    width: 100%;
+    height: 100%;
+}
+.input-1 input{
+    padding: 20px;
+    margin: 0 20px 20px 0;
+    border-radius: 5px;
+    border: none;
+    background: var(--gray);
+    color: var(--dark-gray);
+}
+textarea{
+    display: flex;
+    flex: 0 0 35%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-family:  'Lato', sans-serif;
+    background: var(--gray);
+    color: var(--dark-gray);
+    border: none;
+}
+
+/*Bottom-bar*/
+.bottom-bar{
+    padding: 30px
+}
+
+.bottom-bar .container{
+    display: flex;
+    align-items: center;
+}
+.social-bottom{
+    margin-left: 25%;
+}
+
+.social-bottom a i{
+    font-size: 1.4rem;
+    background: var(--black);
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    color: var(--white);
+    margin-right: 10px;
+}
+.social-bottom a i:hover{
+    background: var(--yellow);
+    color: var(--white);
+    transition: .5s ease;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 768px){
+   
+    .btn{
+    padding: 10px 30px;
+    font-size: 1rem;
+}
+    
+    
+    /*Header i Navigacija*/
+
+.header{
+    height: 100vh;
+    width: auto;
+}
+
+nav{
+    padding: 10px 0;
+}
+    .logo{
+        margin-top: 40px;
+    }
+nav .logo a{
+    font-size: 2.4rem;
+   
+}
+  .nav-bar .nav-list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .nav-item{
+        margin: 0 0 15px 15px;
+    }
+
+.content{
+    height: 100%;
+}
+.content h1{
+    font-size: 2rem;
+}
+.content h2{
+    font-size: 3rem;
+}
+    /*Hamburger-menu*/
+   .nav-bar{
+        width: 200px;
+        height: 80%;
+        position: relative;
+        background: linear-gradient(var(--black), var(--gray));
+        position: fixed;
+        top: 0;
+        right: -300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius:  0 0 0 200px;
+    } 
+     .change{
+        right: 0;
+    }
+.hamburger-menu{
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    right: 20px;  
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: var(--white);
+    transition: all 0.8s;
+} 
+   .change .line-1{
+        transform: rotateZ(-405deg) translate(-8px, 6px);
+    }
+   .change .line-2{
+        opacity: 0;
+    }
+    .change .line-3{
+        transform: rotateZ(405deg) translate(-8px, -6px);
+    }
+    
+
+    /*Services*/
+
+.services{
+    padding: 80px 0;
+}
+
+.services h3{
+   font-size: 2.5rem;
+   font-weight: 800;
+}
+.services p{
+    font-size: 1rem;
+    color: var(--dark-gray);
+    font-style: italic;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    
+}
+.service-one{
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+.service-one a i{
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+   
+    
+}
+.service-one h4{
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+
+/*Portfolio*/
+
+
+.title{
+    background: var(--gray);
+    text-align: center;
+    padding: 80px 0;
+}
+.title h3{
+    font-size: 2.5rem;
+    margin-top: 0px;
+}
+.title p{
+    font-size: 1rem;
+}
+.title .container{
+    margin-top: 0px;
+}
+
+.title .container .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+
+
+/*About*/
+
+.about{
+    padding: 50px 0;
+}
+
+.about p {
+    font-size: 1rem;
+}
+.about .container{
+    width: 100%;
+    margin-top: 80px;
+}
+.about .row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding: 0;
+}
+.one{
+    height: 200px;
+    width: 350px;
+    text-align: left;
+    position: relative;
+    margin-left: 2%;
+}
+.texteria{
+    display: none;
+}
+.one h4{
+    font-size: 1rem;
+    margin-bottom: 20px
+}
+.two{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+   
+}
+.two .hgroup{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+}
+.two .hgroup:hover{
+    opacity: 1;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.hgroup p{
+    font-size: 1.3rem;
+    color: var(--white);
+    
+}
+
+.two img{
+    width: 120px;
+    height: 120px;
+    line-height: 100px;
+    border: 5px solid var(--gray);
+    border-radius: 50%;
+    
+}
+.row .one-2{
+    height: 200px;
+    width: 350px;
+    text-align: left;
+    position: relative;
+    margin-left: 2%;
+}
+
+.one-2 h4{
+    font-size: 1.2rem;
+    margin-bottom: 20px
+}
+.linija{
+    width: 4px;
+    height: 90px;
+    background: var(--gray);
+    margin: 0 50px;
+}
+    .sredina{
+        display: none;
+    }
+.row-2{
+    background: var(--yellow);
+    width: 120px;
+    height: 120px;
+    border: 3px solid var(--gray);
+    border-radius: 80%;
+    margin: 0;
+}
+.row-2 h4{
+   font-size: 1rem;
+    color: var(--white);
+    padding: 20px;
+}
+
+
+/*Team*/
+
+.team{
+    text-align: center;
+    background: var(--gray);
+    padding: 80px 0;
+}
+.team h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.team p{
+    font-size: 1rem;
+}
+.team .container{
+    margin-top: 30px;
+    height: 100%;
+}
+.team .container p{
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+}
+.container .row-22{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 60px
+}
+    .people{
+        margin-top: 40px;
+    }
+.people img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px
+}
+.people h4{
+    font-size: 1.4rem;
+}
+.people p{
+    color: var(--dark-gray);
+}
+.people .social{
+    margin-top: 20px
+}
+.social a i{
+    font-size: 1.4rem;
+    border: 2px solid var(--black);
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: var(--black);
+    margin-right: 10px;
+}
+.social a i:hover{
+    background: var(--yellow);
+    color: var(--white);
+    transition: .5s ease;
+}
+
+
+
+/*Contact*/
+
+.contact{
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0,.8)),url(img/world.jpg);
+    background-position: center;
+    background-size: cover;
+    /*height: 100vh;*/
+    padding: 80px 0;
+}
+
+.contact hgroup{
+    text-align: center;
+    color: var(--white);
+}
+hgroup h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+hgroup p{
+    font-size: 1rem;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+.contact .container{
+    height: 100%;
+    text-align: center;
+ 
+    
+}
+
+
+.inputi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.input-1{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+}
+.input-1 input{
+    width: 100%;
+    padding: 5px;
+    margin: 0 20px 20px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: .8rem;
+    background: var(--gray);
+    color: var(--dark-gray);
+}
+textarea{
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    font-size: .8rem;
+    border-radius: 5px;
+    font-family:  'Lato', sans-serif;
+    background: var(--gray);
+    color: var(--dark-gray);
+    border: none;
+}
+
+/*Bottom-bar*/
+.bottom-bar{
+    padding: 30px 0;
+}
+
+.bottom-bar .container{
+    display: flex;
+    align-items: center;
+}
+.social-bottom{
+    margin-left: 25%;
+}
+
+.social-bottom a i{
+    font-size: 1.1rem;
+    background: var(--black);
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+.social-bottom a i:hover{
+    background: var(--yellow);
+    color: var(--white);
+    transition: .5s ease;
+}
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
