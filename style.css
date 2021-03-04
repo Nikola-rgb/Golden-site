@@ -272,7 +272,6 @@ nav ul .nav-item .nav-link:hover{
     height: 200px;
     width: 350px;
     text-align: right;
-    position: relative;
     margin-right: 45%;
 }
 .texteria{
@@ -700,7 +699,7 @@ nav .logo a{
     margin-left: 2%;
 }
 .texteria{
-    display: none;
+    display: block;
 }
 .one h4{
     font-size: 1rem;
@@ -711,7 +710,8 @@ nav .logo a{
     justify-content: center;
     position: relative;
     cursor: pointer;
-   
+    width: 100%;
+    
 }
 .two .hgroup{
     position: absolute;
@@ -753,14 +753,14 @@ nav .logo a{
 }
 
 .one-2 h4{
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 20px
 }
 .linija{
     width: 4px;
     height: 90px;
     background: var(--gray);
-    margin: 0 50px;
+    margin: 0 50%;
 }
     .sredina{
         display: none;
@@ -771,7 +771,7 @@ nav .logo a{
     height: 120px;
     border: 3px solid var(--gray);
     border-radius: 80%;
-    margin: 0;
+    margin: 0 auto;
 }
 .row-2 h4{
    font-size: 1rem;
