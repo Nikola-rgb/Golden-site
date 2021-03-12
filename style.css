@@ -570,6 +570,7 @@ nav .logo a{
         justify-content: center;
         align-items: center;
         border-radius:  0 0 0 200px;
+        z-index: 1;
     } 
      .change{
         right: 0;
